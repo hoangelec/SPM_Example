@@ -13,6 +13,7 @@
 		5C2F0C7B2B42B8630061CE65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2F0C792B42B8630061CE65 /* Main.storyboard */; };
 		5C2F0C7D2B42B8640061CE65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2F0C7C2B42B8640061CE65 /* Assets.xcassets */; };
 		5C2F0C802B42B8640061CE65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2F0C7E2B42B8640061CE65 /* LaunchScreen.storyboard */; };
+		5C2F0C8B2B42E0E60061CE65 /* MyLocalLib1 in Frameworks */ = {isa = PBXBuildFile; productRef = 5C2F0C8A2B42E0E60061CE65 /* MyLocalLib1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5C2F0C7C2B42B8640061CE65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2F0C7F2B42B8640061CE65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C2F0C812B42B8640061CE65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C2F0C882B42E0AF0061CE65 /* MyLocalLib1 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MyLocalLib1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2F0C8B2B42E0E60061CE65 /* MyLocalLib1 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				5C2F0C722B42B8630061CE65 /* SPM-Example */,
 				5C2F0C712B42B8630061CE65 /* Products */,
+				5C2F0C892B42E0E60061CE65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +75,16 @@
 		5C2F0C872B42B8D20061CE65 /* Development Packages */ = {
 			isa = PBXGroup;
 			children = (
+				5C2F0C882B42E0AF0061CE65 /* MyLocalLib1 */,
 			);
 			path = "Development Packages";
+			sourceTree = "<group>";
+		};
+		5C2F0C892B42E0E60061CE65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +103,9 @@
 			dependencies = (
 			);
 			name = "SPM-Example";
+			packageProductDependencies = (
+				5C2F0C8A2B42E0E60061CE65 /* MyLocalLib1 */,
+			);
 			productName = "SPM-Example";
 			productReference = 5C2F0C702B42B8630061CE65 /* SPM-Example.app */;
 			productType = "com.apple.product-type.application";
@@ -366,6 +381,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C2F0C8A2B42E0E60061CE65 /* MyLocalLib1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLocalLib1;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C2F0C682B42B8630061CE65 /* Project object */;
 }
